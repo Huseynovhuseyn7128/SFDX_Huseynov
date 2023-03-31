@@ -12,4 +12,15 @@ public with sharing class AccountUtility {
         }
 
     }
+
+    Public static void databaseinsert(){  
+    List <Account> accounts = new List< Account>{
+                          new Account (Name = 'Account 1'),
+                          new Account (Name = 'Account 2'),
+                          new Account (Name = '')    
+    
+};
+    system.database.insert(accounts,false);
+ }
+    
 }
